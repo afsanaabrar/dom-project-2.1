@@ -5,7 +5,11 @@ tt.addEventListener('click',function(){
     ty.value=bgcolor;
    
     document.body.style.backgroundColor=bgcolor;
-
+// add copy function
+ const tr=document.getElementById('btn2')
+tr.addEventListener('click',function(){
+    navigator.clipboard.writeText(ty.value)
+})
 })
 
 function hex(){
